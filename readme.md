@@ -32,7 +32,7 @@ Commands:
 
 创建模板命令
 
-```
+
 $ late create test-template
  vue3-ts-webpack5
  react-ts-webpack5
@@ -44,4 +44,3 @@ Successfully created project test-template
   cd test-template
   npm install
   npm run dev
-```
