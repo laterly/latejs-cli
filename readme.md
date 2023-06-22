@@ -7,8 +7,8 @@ npm install latejs-cli -g
 or
 
 ```
-git clone ssh://git@git.pinquest.cn:10022/innovate-front-end/peak-cli.git
-cd late-cli && npm install
+git clone https://github.com/laterly/latejs-cli.git
+cd latejs-cli && npm install
 npm link
 ```
 
