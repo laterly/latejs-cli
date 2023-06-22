@@ -5,6 +5,7 @@ const chalk = require("chalk");
 // const figlet = require("figlet");
 const pkg = require("../package.json");
 
+//快速创建模板
 program
   .command("create <app-name>")
   .description("create a new project")
@@ -13,6 +14,7 @@ program
     require("../lib/create.js")(name, options);
   });
 
+//版本号
 program
   .version(pkg.version)
   .option("-v, --version", "output the version number")
@@ -21,5 +23,8 @@ program
       `\r\nRun ${chalk.cyan(`late <command> --help`)} for details.\r\n`
     );
   });
+
+//webpack构建
+  
 
 program.parse(process.argv);

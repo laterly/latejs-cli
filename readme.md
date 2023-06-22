@@ -20,7 +20,7 @@ Commands:
   help [command]               display help for command 
 ```
 
-## late create <app-name>
+## late create appName
 
 创建模板命令
 
