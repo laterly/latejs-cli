@@ -33,15 +33,20 @@ Commands:
 创建模板命令
 
 ```cmd
-$ late create test-template
+$ late create project-template
+
+✔ waiting fetch template
+
  vue3-ts-webpack5
+
  react-ts-webpack5
 
 ✔ waiting download template
 
-Successfully created project test-template
+Successfully created project project-template
 
-  cd test-template
+  cd project-template
+  
   npm install
   npm run dev
 ```
