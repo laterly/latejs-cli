@@ -1,0 +1,32 @@
+{
+  "name": "latejs-cli",
+  "version": "1.0.4",
+  "description": "cli脚手架",
+  "main": "index.js",
+  "bin": {
+    "late": "./bin/cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "bin",
+    "lib"
+  ],
+  "keywords": [
+    "latejs-cli",
+    "late",
+    "cli脚手架"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "chalk": "4.1.2",
+    "commander": "^9.1.0",
+    "download-git-repo": "^3.0.2",
+    "figlet": "^1.5.2",
+    "fs-extra": "^10.0.1",
+    "inquirer": "^8.2.2",
+    "ora": "^5.1.0"
+  }
+}
