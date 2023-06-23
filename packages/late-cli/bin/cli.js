@@ -5,6 +5,14 @@ const chalk = require("chalk");
 // const figlet = require("figlet");
 const pkg = require("../package.json");
 
+//webpack构建
+program
+  .command("dev")
+  .description("start server")
+  .action((name, options) => {
+    console.log("name", name, options);
+  });
+
 //快速创建模板
 program
   .command("create <app-name>")
@@ -23,8 +31,5 @@ program
       `\r\nRun ${chalk.cyan(`late <command> --help`)} for details.\r\n`
     );
   });
-
-//webpack构建
-  
 
 program.parse(process.argv);

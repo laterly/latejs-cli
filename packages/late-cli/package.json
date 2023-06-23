@@ -1,11 +1,20 @@
 {
   "name": "latejs-cli",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "cli脚手架",
   "main": "index.js",
   "bin": {
     "late": "./bin/cli.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laterly/latejs-cli.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/laterly/latejs-cli/issues"
+  },
+  "homepage": "https://github.com/laterly/latejs-cli#readme",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
