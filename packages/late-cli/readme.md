@@ -29,9 +29,9 @@ $ late create project-template
 
 ✔ waiting fetch template
 
- vue3-ts-webpack5
+ Vue3-Ts
 
- react-ts-webpack5
+ React-Ts
 
 ✔ waiting download template
 

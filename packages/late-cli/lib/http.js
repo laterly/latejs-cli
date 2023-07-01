@@ -6,13 +6,13 @@
 async function getRepoList() {
   return [
     {
-      name:'vue3-ts-webpack5',
-      url:'https://github.com/laterly/vue3-ts-webpack5.git'
+      name:'React-Ts',
+      url:'https://github.com/laterly/react-ts.git'
     },
     {
-      name:'react-ts-webpack5',
-      url:'https://github.com/laterly/react-ts-webpack5.git'
-    },
+      name:'Vue3-Ts',
+      url:'https://github.com/laterly/vue3-ts-webpack5.git'
+    }
   ]
 }
 
