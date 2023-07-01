@@ -21,8 +21,10 @@ class Generator {
   // 2）调用下载方法
   // https://github.com/laterly/react-ts-webpack5.git
   async download(repo) {
+    const list = await getRepoList();
+    const obj = list.find(item=>item.name === repo)
     // 1）拼接下载地址
-    const requestUrl = `direct:https://github.com/laterly/${repo}.git`;
+    const requestUrl = `direct:${obj.url}#main`;
 
     // 2）调用下载方法
     await wrapLoading(
