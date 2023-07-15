@@ -1,4 +1,4 @@
-const ora = require("ora");
+import ora from "ora";
 // 添加加载动画
 async function wrapLoading(fn, message, ...args) {
   // 使用 ora 初始化，传入提示信息 message
@@ -18,6 +18,6 @@ async function wrapLoading(fn, message, ...args) {
     spinner.fail("Request failed, refetch ...");
   }
 }
-module.exports={
-    wrapLoading
-}
+export {
+  wrapLoading
+};

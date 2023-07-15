@@ -1,8 +1,8 @@
-const path = require("path");
-const fs = require("fs-extra");
-const inquirer = require("inquirer");
-const Generator = require("./generator");
-module.exports = async function (name, options) {
+import path from "path";
+import fs from "fs-extra";
+import inquirer from "inquirer";
+import Generator from "./generator";
+const create = async function (name:string, options) {
   const cwd = process.cwd();
   // 需要创建的目录地址
   const targetAir = path.join(cwd, name);
@@ -44,3 +44,5 @@ module.exports = async function (name, options) {
   // 开始创建项目
   generator.create();
 };
+
+export default create;

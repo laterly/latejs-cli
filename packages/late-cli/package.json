@@ -1,8 +1,8 @@
 {
   "name": "latejs-cli",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "cli脚手架",
-  "main": "index.js",
+  "main": "./bin/cli.js",
   "bin": {
     "late": "./bin/cli.js"
   },
@@ -16,11 +16,12 @@
   },
   "homepage": "https://github.com/laterly/latejs-cli#readme",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tsc --build ./tsconfig.json -w",
+    "build": "tsc --build ./tsconfig.json"
   },
   "files": [
     "bin",
-    "lib"
+    "dist"
   ],
   "keywords": [
     "latejs-cli",
@@ -29,6 +30,8 @@
   ],
   "license": "MIT",
   "dependencies": {
+    "@types/inquirer": "^9.0.3",
+    "@types/node": "^20.4.2",
     "axios": "^0.26.1",
     "chalk": "4.1.2",
     "commander": "^9.1.0",
@@ -36,6 +39,7 @@
     "figlet": "^1.5.2",
     "fs-extra": "^10.0.1",
     "inquirer": "^8.2.2",
-    "ora": "^5.1.0"
+    "ora": "^5.1.0",
+    "typescript": "^5.1.6"
   }
 }

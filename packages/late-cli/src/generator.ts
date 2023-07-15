@@ -1,13 +1,17 @@
-const path = require("path");
-const fs = require("fs-extra");
-const chalk = require("chalk");
-const inquirer = require("inquirer");
-const util = require("util");
-const { exec } = require("child_process");
-const downloadGitRepo = require("download-git-repo"); // 不支持 Promise
-const { wrapLoading } = require("./utils");
-const { getRepoList } = require("./http");
+import path from "path";
+import fs from "fs-extra";
+import chalk from "chalk";
+import inquirer from "inquirer";
+import util from "util";
+import { exec } from "child_process";
+import downloadGitRepo from "download-git-repo"; // 不支持 Promise
+import { wrapLoading } from "./utils";
+import { getRepoList } from "./http";
+declare module Generator {}
 class Generator {
+  name?: string;
+  targetDir?: string;
+  downloadGitRepo?: () => Promise<any>;
   constructor(name, targetDir) {
     // 目录名称
     this.name = name;
@@ -22,7 +26,7 @@ class Generator {
   // https://github.com/laterly/react-ts-webpack5.git
   async download(repo) {
     const list = await getRepoList();
-    const obj = list.find(item=>item.name === repo)
+    const obj = list.find((item) => item.name === repo);
     // 1）拼接下载地址
     const requestUrl = `direct:${obj.url}#main`;
 
@@ -109,4 +113,4 @@ class Generator {
   }
 }
 
-module.exports = Generator;
+export default Generator;

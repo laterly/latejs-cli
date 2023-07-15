@@ -16,6 +16,6 @@ async function getRepoList() {
   ]
 }
 
-module.exports = {
+export {
   getRepoList
-}
+};
